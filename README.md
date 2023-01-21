@@ -42,7 +42,7 @@ Each line contains a filtered triple, each of which includes the following keys:
 ```text
 {
     "speaker_id": The anonymized user ID of the user who sent the commands in the triple.
-    "before_utterances": A list of strings corresponding to the "before" utterances in the triple.
+    "before_utterances": A list of strings corresponding to the "preceding" utterances in the triple.
     "combat_state_before": A list of normalized actor states (see below) for each actor in the combat instance at the instant before the command was run.
     "current_actor": (nullable) The normalized actor state of the actor whose turn it currently is.
     "commands_norm": A list of strings corresponding to the "commands" portion of the triple.
@@ -50,9 +50,9 @@ Each line contains a filtered triple, each of which includes the following keys:
     "caster_after": The normalized actor state of the actor who ran the action(s), which may or may not be the current actor.
     "targets_after": A list of normalized actor states for each actor who was targeted by the action.
     "combat_state_after": A list of normalized actor states for each actor in the combat instance at the instant after the command was run.
-    "after_utterances": A list of strings corresponding to the "after" utterances in the triple.
+    "after_utterances": A list of strings corresponding to the "folllowing" utterances in the triple.
     "utterance_history": The last 5 messages in the chat history before the command was run.
-    "before_idxs": A list of integers corresponding to the index of the "message" events containing the "before" utterances in the raw event file.
+    "before_idxs": A list of integers corresponding to the index of the "message" events containing the "preceding" utterances in the raw event file.
     "before_state_idx": The index of the "combat_state_update" event in the raw event file that was used to derive "combat_state_before".
     "command_idxs": The indexes of the "command" events corresponding to the "commands_norm" key.
     "after_state_idx": The index of the "combat_state_update" event corresponding to the "combat_state_after" key.

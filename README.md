@@ -26,7 +26,7 @@ Each line contains a recorded event, which must be one of the following:
 - combat_state_update
 ```
 
-The meanings of these events are discussed in Appendix A of the FIREBALL paper. Each event contains at least the
+The meanings of these events are discussed in Appendix B of the FIREBALL paper. Each event contains at least the
 following keys:
 
 - `combat_id`: Used for data partitioning, should be the same across all events in a gameplay instance.
@@ -64,7 +64,7 @@ Each line contains a filtered triple, each of which includes the following keys:
 ### Normalized Actor State
 
 The normalized actor state is only a subset of the available actor information, corresponding to the information we
-used for our engineering experiments for the FIREBALL paper. For a full list of available actor information, see table 1
+used for our engineering experiments for the FIREBALL paper. For a full list of available actor information, see table 6
 in the FIREBALL paper.
 
 ```text
